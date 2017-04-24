@@ -106,7 +106,7 @@ function encodeLexicographic(value: number): string
 function decodeLexicographic(key: string): number
 ```
 
-These functions encode and decode integer values (both positive and negative) as strings that have a lexicographic ordering that is identical to the numeric ordering. It's based upon an implementation used in [Firepad][firepad].
+These functions encode and decode integer values (both positive and negative) as strings that have a lexicographic ordering that is identical to the numeric ordering. They are based upon an implementation used in [Firepad][firepad].
 
 [gist]: https://gist.github.com/mikelehen/3596a30bd69384624c11
 [firepad]: https://github.com/firebase/firepad/blob/v1.4.0/lib/firebase-adapter.js#L375-L403
