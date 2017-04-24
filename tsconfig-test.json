@@ -1,0 +1,8 @@
+{
+  "compilerOptions": {
+    "declaration": false,
+    "outDir": "build"
+  },
+  "exclude": [],
+  "extends": "./tsconfig.json"
+}
