@@ -26,7 +26,14 @@
   },
   "homepage": "https://github.com/cartant/firebase-key",
   "jsnext:main": "./dist/index.js",
-  "keywords": ["firebase", "key", "push", "pushid", "pushkey", "timestamp"],
+  "keywords": [
+    "firebase",
+    "key",
+    "push",
+    "pushid",
+    "pushkey",
+    "timestamp"
+  ],
   "license": "MIT",
   "main": "./bundles/firebase-key.umd.js",
   "module": "./dist/index.js",
@@ -35,8 +42,8 @@
   "peerDependencies": {},
   "private": false,
   "repository": {
-    "type" : "git",
-    "url" : "https://github.com/cartant/firebase-key.git"
+    "type": "git",
+    "url": "https://github.com/cartant/firebase-key.git"
   },
   "scripts": {
     "dist": "npm run dist:build && npm run dist:uglify",
@@ -51,5 +58,5 @@
   },
   "typings": "./dist/index.d.ts",
   "unpkg": "./bundles/firebase-key.min.umd.js",
-  "version": "1.0.0"
+  "version": "1.0.1"
 }
