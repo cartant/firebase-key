@@ -86,7 +86,7 @@
     "no-reference": { "severity": "error" },
     "no-reference-import": { "severity": "error" },
     "no-require-imports": { "severity": "off" },
-    "no-shadowed-variable": { "severity": "warning" },
+    "no-shadowed-variable": { "severity": "off" },
     "no-sparse-arrays": { "severity": "error" },
     "no-string-literal": { "severity": "off" },
     "no-switch-case-fall-through": { "severity": "error" },
