@@ -58,5 +58,5 @@
   },
   "typings": "./dist/index.d.ts",
   "unpkg": "./bundles/firebase-key.min.umd.js",
-  "version": "1.0.1"
+  "version": "1.0.2"
 }
