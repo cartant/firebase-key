@@ -48,13 +48,13 @@
   "scripts": {
     "dist": "npm run dist:build && npm run dist:uglify",
     "dist:build": "npm run dist:clean && tsc -p tsconfig-dist.json && rollup -c rollup-config.js",
-    "dist:clean": "rimraf ./dist && rimraf ./bundles/firebase-key.*",
-    "dist:uglify": "uglifyjs -c --comments /license/ -m --screw-ie8 -o ./bundles/firebase-key.min.umd.js ./bundles/firebase-key.umd.js",
+    "dist:clean": "rimraf dist && rimraf bundles/firebase-key.* && mkdir -p bundles",
+    "dist:uglify": "uglifyjs -c --comments /license/ -m --screw-ie8 -o bundles/firebase-key.min.umd.js bundles/firebase-key.umd.js",
     "lint": "tslint --project tsconfig.json --type-check source/**/*.ts",
     "_prepublish": "npm run test && npm run dist",
     "test": "npm run lint && npm run test:build && karma start",
     "test:build": "npm run test:clean && tsc -p tsconfig.json && rollup -c rollup-config-test.js",
-    "test:clean": "rimraf ./build && rimraf ./bundles/firebase-key-test.*"
+    "test:clean": "rimraf build && rimraf bundles/firebase-key-test.* && mkdir -p bundles"
   },
   "typings": "./dist/index.d.ts",
   "unpkg": "./bundles/firebase-key.min.umd.js",
