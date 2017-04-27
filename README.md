@@ -1,5 +1,11 @@
 # firebase-key
 
+[![NPM version](https://img.shields.io/npm/v/firebase-key.svg)](https://www.npmjs.com/package/firebase-key)
+[![Build status](https://img.shields.io/travis/cartant/firebase-key.svg)](http://travis-ci.org/cartant/firebase-key)
+[![dependency status](https://img.shields.io/david/cartant/firebase-key.svg)](https://david-dm.org/cartant/firebase-key)
+[![devDependency Status](https://img.shields.io/david/dev/cartant/firebase-key.svg)](https://david-dm.org/cartant/firebase-key#info=devDependencies)
+[![peerDependency Status](https://img.shields.io/david/peer/cartant/firebase-key.svg)](https://david-dm.org/cartant/firebase-key#info=peerDependencies)
+
 This is a library of utility functions for manipulating, encoding and decoding Firebase keys.
 
 ## Install
