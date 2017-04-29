@@ -1,4 +1,5 @@
 /build
+/bundles/*-test.umd.js
 /node_modules
 /source
 /temp
