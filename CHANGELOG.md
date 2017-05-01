@@ -1,3 +1,10 @@
+<a name="1.0.4"></a>
+## [1.0.4](https://github.com/cartant/firebase-key/compare/v1.0.3...v1.0.4) (2017-05-02)
+
+### Doc
+
+* Update `README.md` ([7867c8c](https://github.com/cartant/firebase-key/commit/7867c8c))
+
 <a name="1.0.3"></a>
 ## [1.0.3](https://github.com/cartant/firebase-key/compare/v1.0.2...v1.0.3) (2017-04-29)
 
