@@ -6,7 +6,19 @@
 [![devDependency Status](https://img.shields.io/david/dev/cartant/firebase-key.svg)](https://david-dm.org/cartant/firebase-key#info=devDependencies)
 [![peerDependency Status](https://img.shields.io/david/peer/cartant/firebase-key.svg)](https://david-dm.org/cartant/firebase-key#info=peerDependencies)
 
-This is a library of utility functions for manipulating, encoding and decoding Firebase keys.
+### What is it?
+
+`firebase-key` is a library of utility functions for manipulating, encoding and decoding Firebase keys.
+
+### Why might I need it?
+
+You might find `firebase-key` useful if you need to to any of the following:
+
+* Convert a Firebase push key/ID to a time.
+* Query push keys/IDs based on time.
+* Page through push keys/IDs as efficiently as possible.
+* Store illegal characters in Firebase keys.
+* Encode integers as strings that sort numerically.
 
 ## Install
 
