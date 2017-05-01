@@ -12,7 +12,7 @@
 
 ### Why might I need it?
 
-You might find `firebase-key` useful if you need to to any of the following:
+You might find `firebase-key` useful if you need to do any of the following:
 
 * Convert a Firebase push key/ID to a time.
 * Query push keys/IDs based on time.
