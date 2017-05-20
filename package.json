@@ -23,7 +23,7 @@
     "tslib": "^1.6.1",
     "tslint": "^5.1.0",
     "typescript": "^2.2.2",
-    "uglifyjs": "2.4.10"
+    "uglify-js": "^3.0.10"
   },
   "homepage": "https://github.com/cartant/firebase-key",
   "jsnext:main": "./dist/index.js",
@@ -50,7 +50,7 @@
     "dist": "npm run dist:build && npm run dist:uglify",
     "dist:build": "npm run dist:clean && tsc -p tsconfig-dist.json && rollup -c rollup-config.js",
     "dist:clean": "rimraf dist && rimraf bundles/firebase-key.* && mkdirp bundles",
-    "dist:uglify": "uglifyjs -c --comments /license/ -m --screw-ie8 -o bundles/firebase-key.min.umd.js bundles/firebase-key.umd.js",
+    "dist:uglify": "uglifyjs -c --comments /license/ -m -o bundles/firebase-key.min.umd.js bundles/firebase-key.umd.js",
     "lint": "tslint --project tsconfig.json --type-check source/**/*.ts",
     "prepublish": "npm run test && npm run dist",
     "test": "npm run lint && npm run test:build && karma start",
