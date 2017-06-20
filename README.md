@@ -28,7 +28,7 @@ Install the package using NPM:
 npm install firebase-key --save
 ```
 
-And import the functions for use with TypeScript and ES2015:
+And import the functions for use with TypeScript or ES2015:
 
 ```js
 import { key } from "firebase-key";
