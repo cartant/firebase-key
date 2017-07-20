@@ -10,7 +10,7 @@
 
 `firebase-key` is a library of utility functions for manipulating, encoding and decoding Firebase keys.
 
-### Why might I need it?
+### Why might you need it?
 
 You might find `firebase-key` useful if you need to do any of the following:
 
