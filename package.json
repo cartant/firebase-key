@@ -19,10 +19,10 @@
     "mkdirp": "^0.5.1",
     "mocha": "^3.2.0",
     "rimraf": "^2.6.1",
-    "rollup": "^0.47.0",
+    "rollup": "^0.49.0",
     "tslib": "^1.6.1",
     "tslint": "^5.1.0",
-    "typescript": "^2.4.1 <2.5.0",
+    "typescript": "^2.5.2 <2.6.0",
     "uglify-js": "^3.0.10"
   },
   "homepage": "https://github.com/cartant/firebase-key",
