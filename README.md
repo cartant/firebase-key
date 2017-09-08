@@ -6,6 +6,8 @@
 [![devDependency Status](https://img.shields.io/david/dev/cartant/firebase-key.svg)](https://david-dm.org/cartant/firebase-key#info=devDependencies)
 [![peerDependency Status](https://img.shields.io/david/peer/cartant/firebase-key.svg)](https://david-dm.org/cartant/firebase-key#info=peerDependencies)
 
+<a target='_blank' rel='nofollow' href='https://app.codesponsor.io/link/jZB4ja6SvwGUN4ibgYVgUVYV/cartant/firebase-key'>  <img alt='Sponsor' width='888' height='68' src='https://app.codesponsor.io/embed/jZB4ja6SvwGUN4ibgYVgUVYV/cartant/firebase-key.svg' /></a>
+
 ### What is it?
 
 `firebase-key` is a library of utility functions for manipulating, encoding and decoding Firebase keys.
