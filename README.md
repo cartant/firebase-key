@@ -1,5 +1,7 @@
 # firebase-key
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/cartant/firebase-key.svg)](https://greenkeeper.io/)
+
 [![NPM version](https://img.shields.io/npm/v/firebase-key.svg)](https://www.npmjs.com/package/firebase-key)
 [![Build status](https://img.shields.io/travis/cartant/firebase-key.svg)](http://travis-ci.org/cartant/firebase-key)
 [![dependency status](https://img.shields.io/david/cartant/firebase-key.svg)](https://david-dm.org/cartant/firebase-key)
