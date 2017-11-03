@@ -51,7 +51,7 @@
     "dist:build": "yarn run dist:clean && tsc -p tsconfig-dist.json && rollup -c rollup-config.js",
     "dist:clean": "rimraf dist && rimraf bundles/firebase-key.* && mkdirp bundles",
     "dist:uglify": "uglifyjs -c --comments /license/ -m -o bundles/firebase-key.min.umd.js bundles/firebase-key.umd.js",
-    "lint": "tslint --project tsconfig.json --type-check source/**/*.ts",
+    "lint": "tslint --project tsconfig.json source/**/*.ts",
     "prepublishOnly": "yarn run test && yarn run dist",
     "test": "yarn run lint && yarn run test:build && karma start",
     "test:build": "yarn run test:clean && tsc -p tsconfig.json && rollup -c rollup-config-test.js",
