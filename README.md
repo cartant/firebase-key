@@ -129,5 +129,3 @@ These functions encode and decode integer values (both positive and negative) as
 
 [gist]: https://gist.github.com/mikelehen/3596a30bd69384624c11
 [firepad]: https://github.com/firebase/firepad/blob/v1.4.0/lib/firebase-adapter.js#L375-L403
-
-<a target='_blank' rel='nofollow' href='https://app.codesponsor.io/link/jZB4ja6SvwGUN4ibgYVgUVYV/cartant/firebase-key'>  <img alt='Sponsor' width='888' height='68' src='https://app.codesponsor.io/embed/jZB4ja6SvwGUN4ibgYVgUVYV/cartant/firebase-key.svg' /></a>
