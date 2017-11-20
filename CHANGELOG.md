@@ -1,3 +1,16 @@
+<a name="1.0.6"></a>
+## [1.0.6](https://github.com/cartant/firebase-key/compare/v1.0.5...v1.0.6) (2017-11-21)
+
+### Doc
+
+* Trivial update to `README.md` ([98569b7](https://github.com/cartant/firebase-key/commit/98569b7))
+
+### Build
+
+* Update dependencies
+* Upgrade to TypeScript 2.6 ([6aa34cd](https://github.com/cartant/firebase-key/commit/6aa34cd))
+* Switch to Yarn ([9d5477d](https://github.com/cartant/firebase-key/commit/9d5477d))
+
 <a name="1.0.5"></a>
 ## [1.0.5](https://github.com/cartant/firebase-key/compare/v1.0.4...v1.0.5) (2017-09-11)
 
