@@ -3,16 +3,16 @@
 
 
 "@types/chai@^4.0.0":
-  version "4.0.4"
-  resolved "https://registry.yarnpkg.com/@types/chai/-/chai-4.0.4.tgz#fe86315d9a66827feeb16f73bc954688ec950e18"
+  version "4.0.5"
+  resolved "https://registry.yarnpkg.com/@types/chai/-/chai-4.0.5.tgz#b6e250e281b47e0192e236619e9b1afe62fd345c"
 
 "@types/mocha@^2.2.41":
   version "2.2.44"
   resolved "https://registry.yarnpkg.com/@types/mocha/-/mocha-2.2.44.tgz#1d4a798e53f35212fd5ad4d04050620171cd5b5e"
 
 "@types/node@^8.0.0":
-  version "8.0.51"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-8.0.51.tgz#b31d716fb8d58eeb95c068a039b9b6292817d5fb"
+  version "8.0.53"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-8.0.53.tgz#396b35af826fa66aad472c8cb7b8d5e277f4e6d8"
 
 abbrev@1:
   version "1.1.1"
@@ -44,8 +44,8 @@ after@0.8.2:
   resolved "https://registry.yarnpkg.com/after/-/after-0.8.2.tgz#fedb394f9f0e02aa9768e702bda23b505fae7e1f"
 
 agent-base@^4.1.0:
-  version "4.1.1"
-  resolved "https://registry.yarnpkg.com/agent-base/-/agent-base-4.1.1.tgz#92d8a4fc2524a3b09b3666a33b6c97960f23d6a4"
+  version "4.1.2"
+  resolved "https://registry.yarnpkg.com/agent-base/-/agent-base-4.1.2.tgz#80fa6cde440f4dcf9af2617cf246099b5d99f0c8"
   dependencies:
     es6-promisify "^5.0.0"
 
@@ -224,8 +224,8 @@ better-assert@~1.0.0:
     callsite "1.0.0"
 
 binary-extensions@^1.0.0:
-  version "1.10.0"
-  resolved "https://registry.yarnpkg.com/binary-extensions/-/binary-extensions-1.10.0.tgz#9aeb9a6c5e88638aad171e167f5900abe24835d0"
+  version "1.11.0"
+  resolved "https://registry.yarnpkg.com/binary-extensions/-/binary-extensions-1.11.0.tgz#46aa1751fb6a2f93ee5e689bb1087d4b14c6c205"
 
 blob@0.0.4:
   version "0.0.4"
@@ -341,6 +341,10 @@ chalk@^2.0.0, chalk@^2.1.0:
     ansi-styles "^3.1.0"
     escape-string-regexp "^1.0.5"
     supports-color "^4.0.0"
+
+chardet@^0.4.0:
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/chardet/-/chardet-0.4.0.tgz#0bbe1355ac44d7a3ed4a925707c4ef70f8190f6c"
 
 check-error@^1.0.1:
   version "1.0.2"
@@ -780,11 +784,11 @@ extend@^3.0.0, extend@~3.0.0:
   resolved "https://registry.yarnpkg.com/extend/-/extend-3.0.1.tgz#a755ea7bc1adfcc5a31ce7e762dbaadc5e636444"
 
 external-editor@^2.0.4:
-  version "2.0.5"
-  resolved "https://registry.yarnpkg.com/external-editor/-/external-editor-2.0.5.tgz#52c249a3981b9ba187c7cacf5beb50bf1d91a6bc"
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/external-editor/-/external-editor-2.1.0.tgz#3d026a21b7f95b5726387d4200ac160d372c3b48"
   dependencies:
+    chardet "^0.4.0"
     iconv-lite "^0.4.17"
-    jschardet "^1.4.2"
     tmp "^0.0.33"
 
 extglob@^0.3.1:
@@ -1274,10 +1278,6 @@ jsbn@~0.1.0:
   version "0.1.1"
   resolved "https://registry.yarnpkg.com/jsbn/-/jsbn-0.1.1.tgz#a5e654c2e5a2deb5f201d96cefbca80c0ef2f513"
 
-jschardet@^1.4.2:
-  version "1.6.0"
-  resolved "https://registry.yarnpkg.com/jschardet/-/jschardet-1.6.0.tgz#c7d1a71edcff2839db2f9ec30fc5d5ebd3c1a678"
-
 json-schema-traverse@^0.3.0:
   version "0.3.1"
   resolved "https://registry.yarnpkg.com/json-schema-traverse/-/json-schema-traverse-0.3.1.tgz#349a6d44c53a51de89b40805c5d5e59b417d3340"
@@ -1515,8 +1515,8 @@ mute-stream@0.0.7:
   resolved "https://registry.yarnpkg.com/mute-stream/-/mute-stream-0.0.7.tgz#3075ce93bc21b8fab43e1bc4da7e8115ed1e7bab"
 
 nan@^2.3.0:
-  version "2.7.0"
-  resolved "https://registry.yarnpkg.com/nan/-/nan-2.7.0.tgz#d95bf721ec877e08db276ed3fc6eb78f9083ad46"
+  version "2.8.0"
+  resolved "https://registry.yarnpkg.com/nan/-/nan-2.8.0.tgz#ed715f3fe9de02b57a5e6252d90a96675e1f085a"
 
 natural-compare@^1.4.0:
   version "1.4.0"
@@ -1919,8 +1919,8 @@ rimraf@2, rimraf@^2.2.8, rimraf@^2.5.1, rimraf@^2.6.0, rimraf@^2.6.1:
     glob "^7.0.5"
 
 rollup@^0.51.0:
-  version "0.51.3"
-  resolved "https://registry.yarnpkg.com/rollup/-/rollup-0.51.3.tgz#229e0004d6cf8f207f77a7a8dc76924155f4c1dd"
+  version "0.51.8"
+  resolved "https://registry.yarnpkg.com/rollup/-/rollup-0.51.8.tgz#58bd0b642885f4770b5f93cc64f14e4233c2236d"
 
 run-async@^2.2.0:
   version "2.3.0"
@@ -2255,8 +2255,8 @@ typescript@~2.6.1:
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-2.6.1.tgz#ef39cdea27abac0b500242d6726ab90e0c846631"
 
 uglify-js@^3.0.10:
-  version "3.1.8"
-  resolved "https://registry.yarnpkg.com/uglify-js/-/uglify-js-3.1.8.tgz#780d08b4f6782fe36ea5484d952362eddaf1d7b8"
+  version "3.1.10"
+  resolved "https://registry.yarnpkg.com/uglify-js/-/uglify-js-3.1.10.tgz#c4a5f9b5c6276b40cb971c1d97c9eeb26af9509c"
   dependencies:
     commander "~2.11.0"
     source-map "~0.6.1"
