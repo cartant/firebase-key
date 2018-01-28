@@ -25,8 +25,8 @@
     "typescript": "~2.6.1",
     "uglify-js": "^3.0.10"
   },
+  "es2015": "./dist/esm2015/index.js",
   "homepage": "https://github.com/cartant/firebase-key",
-  "jsnext:main": "./dist/index.js",
   "keywords": [
     "firebase",
     "key",
@@ -36,8 +36,8 @@
     "timestamp"
   ],
   "license": "MIT",
-  "main": "./bundles/firebase-key.umd.js",
-  "module": "./dist/index.js",
+  "main": "./dist/index.js",
+  "module": "./dist/esm5/index.js",
   "name": "firebase-key",
   "optionalDependencies": {},
   "peerDependencies": {},
@@ -48,7 +48,10 @@
   },
   "scripts": {
     "dist": "yarn run dist:build && yarn run dist:uglify",
-    "dist:build": "yarn run dist:clean && tsc -p tsconfig-dist.json && rollup -c rollup-config.js",
+    "dist:build": "yarn run dist:clean && yarn run dist:build:cjs && yarn run dist:build:esm2015 && yarn run dist:build:esm5 && rollup -c rollup-config.js",
+    "dist:build:cjs": "tsc -p tsconfig-dist-cjs.json",
+    "dist:build:esm2015": "tsc -p tsconfig-dist-esm2015.json",
+    "dist:build:esm5": "tsc -p tsconfig-dist-esm5.json",
     "dist:clean": "rimraf dist && rimraf bundles/firebase-key.* && mkdirp bundles",
     "dist:uglify": "uglifyjs -c --comments /license/ -m -o bundles/firebase-key.min.umd.js bundles/firebase-key.umd.js",
     "lint": "tslint --project tsconfig.json source/**/*.ts",
