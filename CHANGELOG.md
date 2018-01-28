@@ -1,3 +1,11 @@
+<a name="2.0.0"></a>
+## [2.0.0](https://github.com/cartant/firebase-key/compare/v1.0.6...v2.0.0) (2018-01-28)
+
+### Build
+
+* The distribution now includes CommonJS, ES5 and ES2015 versions of the package.
+* There should be no breaking changes, but the `jsnext:main` entry point has been removed from the `package.json` and an `es2015` entry point has been added for the ES2015 files.
+
 <a name="1.0.6"></a>
 ## [1.0.6](https://github.com/cartant/firebase-key/compare/v1.0.5...v1.0.6) (2017-11-21)
 
