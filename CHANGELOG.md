@@ -1,3 +1,10 @@
+<a name="2.0.1"></a>
+## [2.0.1](https://github.com/cartant/firebase-key/compare/v2.0.0...v2.0.1) (2018-02-09)
+
+### Fixes
+
+* Removed `tslib`. ([d783691](https://github.com/cartant/firebase-key/commit/d783691))
+
 <a name="2.0.0"></a>
 ## [2.0.0](https://github.com/cartant/firebase-key/compare/v1.0.6...v2.0.0) (2018-01-28)
 
