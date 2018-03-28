@@ -21,7 +21,7 @@
     "rimraf": "^2.6.1",
     "rollup": "^0.57.0",
     "tslint": "^5.1.0",
-    "typescript": "~2.7.1",
+    "typescript": "~2.8.1",
     "uglify-js": "^3.0.10"
   },
   "es2015": "./dist/esm2015/index.js",
