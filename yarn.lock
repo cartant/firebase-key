@@ -28,9 +28,14 @@
   version "5.2.5"
   resolved "https://registry.yarnpkg.com/@types/mocha/-/mocha-5.2.5.tgz#8a4accfc403c124a0bafe8a9fc61a05ec1032073"
 
-"@types/node@*", "@types/node@^10.0.0":
+"@types/node@^10.0.0":
   version "10.12.18"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-10.12.18.tgz#1d3ca764718915584fcd9f6344621b7672665c67"
+
+"@types/node@^11.9.5":
+  version "11.10.5"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-11.10.5.tgz#fbaca34086bdc118011e1f05c47688d432f2d571"
+  integrity sha512-DuIRlQbX4K+d5I+GMnv+UfnGh+ist0RdlvOp+JZ7ePJ6KQONCFQv/gKYSU1ZzbVdFSUCKZOltjmpFAGGv5MdYA==
 
 abbrev@1:
   version "1.1.1"
@@ -47,9 +52,14 @@ acorn-jsx@^5.0.0:
   version "5.0.1"
   resolved "https://registry.yarnpkg.com/acorn-jsx/-/acorn-jsx-5.0.1.tgz#32a064fd925429216a09b141102bfdd185fae40e"
 
-acorn@^6.0.2, acorn@^6.0.4:
+acorn@^6.0.2:
   version "6.0.4"
   resolved "https://registry.yarnpkg.com/acorn/-/acorn-6.0.4.tgz#77377e7353b72ec5104550aa2d2097a2fd40b754"
+
+acorn@^6.1.1:
+  version "6.1.1"
+  resolved "https://registry.yarnpkg.com/acorn/-/acorn-6.1.1.tgz#7d25ae05bb8ad1f9b699108e1094ecd7884adc1f"
+  integrity sha512-jPTiwtOxaHNaAPg/dmrJ/beuzLRnXtB0kQPQ8JpotKJgTB6rX6c8mlf315941pyjBSaPg8NHXS9fhP4u17DpGA==
 
 after@0.8.2:
   version "0.8.2"
@@ -1954,13 +1964,14 @@ rimraf@^2.6.0, rimraf@^2.6.1, rimraf@~2.6.2:
   dependencies:
     glob "^7.0.5"
 
-rollup@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/rollup/-/rollup-1.0.0.tgz#db97a04a15364d1cd3823a0024ae8d8fda530a1c"
+rollup@^1.4.2:
+  version "1.4.2"
+  resolved "https://registry.yarnpkg.com/rollup/-/rollup-1.4.2.tgz#31eaa3dd2c0660accad65abe80ac0220b9c2c9c7"
+  integrity sha512-5U68oE1lAPLMG1zS5ahWyA97dFoFE0HMsVOZq54LMrCuy8cvrJKoyNCpfxt0KkF/t2XDuuvY3gwoWywl2wVeGA==
   dependencies:
     "@types/estree" "0.0.39"
-    "@types/node" "*"
-    acorn "^6.0.4"
+    "@types/node" "^11.9.5"
+    acorn "^6.1.1"
 
 run-async@^2.2.0:
   version "2.3.0"
