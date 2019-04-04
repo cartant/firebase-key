@@ -59,6 +59,7 @@
     "test:build": "yarn run test:clean && tsc -p tsconfig.json && rollup -c rollup-config-test.js",
     "test:clean": "rimraf build && rimraf bundles/firebase-key-test.* && mkdirp bundles"
   },
+  "sideEffects": false,
   "types": "./dist/index.d.ts",
   "unpkg": "./bundles/firebase-key.min.umd.js",
   "version": "2.0.1"
