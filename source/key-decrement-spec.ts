@@ -8,14 +8,17 @@ import { expect } from "chai";
 import { decrement } from "./key";
 
 describe("firebase-key", () => {
-
-    describe("decrement", () => {
-
-        it("should decrement a key", () => {
-
-            expect(decrement("-KKkyYoaSgBLxwg1q1sc")).to.equal("-KKkyYoaSgBLxwg1q1sb");
-            expect(decrement("-KKkyYoaSgBLxwg1q1s-")).to.equal("-KKkyYoaSgBLxwg1q1rz");
-            expect(decrement("-KKkyYoaSgBLxwg1q1--")).to.equal("-KKkyYoaSgBLxwg1q0zz");
-        });
+  describe("decrement", () => {
+    it("should decrement a key", () => {
+      expect(decrement("-KKkyYoaSgBLxwg1q1sc")).to.equal(
+        "-KKkyYoaSgBLxwg1q1sb"
+      );
+      expect(decrement("-KKkyYoaSgBLxwg1q1s-")).to.equal(
+        "-KKkyYoaSgBLxwg1q1rz"
+      );
+      expect(decrement("-KKkyYoaSgBLxwg1q1--")).to.equal(
+        "-KKkyYoaSgBLxwg1q0zz"
+      );
     });
+  });
 });

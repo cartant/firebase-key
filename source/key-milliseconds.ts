@@ -6,15 +6,14 @@
 import { alphabet } from "./key-alphabet";
 
 export function milliseconds(key: string): number {
+  let result = 0;
 
-    let result = 0;
-
-    for (let i = 0; i < 8; ++i) {
-        const index = alphabet.indexOf(key.charAt(i));
-        if (index === -1) {
-            throw new Error(`Unexpected character '${key.charAt(i)}'.`);
-        }
-        result = (result * 64) + index;
+  for (let i = 0; i < 8; ++i) {
+    const index = alphabet.indexOf(key.charAt(i));
+    if (index === -1) {
+      throw new Error(`Unexpected character '${key.charAt(i)}'.`);
     }
-    return result;
+    result = result * 64 + index;
+  }
+  return result;
 }

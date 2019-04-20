@@ -7,24 +7,23 @@
  * @see http://stackoverflow.com/a/5450113/6680611
  */
 export function repeat(text: string, count: number): string {
+  let result = "";
 
-    let result = "";
-
-    if (typeof text.repeat === "function") {
-        result = text.repeat(count);
-    } else {
-        /*tslint:disable:no-bitwise*/
-        if (count > 0) {
-            while (count > 1) {
-                if (count & 1) {
-                    result += text;
-                }
-                count >>= 1;
-                text += text;
-            }
-            result = result + text;
+  if (typeof text.repeat === "function") {
+    result = text.repeat(count);
+  } else {
+    /*tslint:disable:no-bitwise*/
+    if (count > 0) {
+      while (count > 1) {
+        if (count & 1) {
+          result += text;
         }
-        /*tslint:enable:no-bitwise*/
+        count >>= 1;
+        text += text;
+      }
+      result = result + text;
     }
-    return result;
+    /*tslint:enable:no-bitwise*/
+  }
+  return result;
 }

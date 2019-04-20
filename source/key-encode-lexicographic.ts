@@ -10,30 +10,29 @@ import { alphabet } from "./key-alphabet";
  * @see http://www.zanopha.com/docs/elen.pdf
  */
 export function encodeLexicographic(value: number): string {
+  let result = "";
 
-    let result = "";
-
-    if (value === 0) {
-        result = "a-";
-    } else if (value > 0) {
-        while (value > 0) {
-            const digit = (value % alphabet.length);
-            result = alphabet.charAt(digit) + result;
-            value -= digit;
-            value /= alphabet.length;
-        }
-        const prefix = alphabet.charAt(result.length + 37);
-        result = prefix + result;
-    } else {
-        value = -value;
-        while (value > 0) {
-            const digit = (value % alphabet.length);
-            result = alphabet.charAt(alphabet.length - 1 - digit) + result;
-            value -= digit;
-            value /= alphabet.length;
-        }
-        const prefix = alphabet.charAt(37 - result.length);
-        result = prefix + result;
+  if (value === 0) {
+    result = "a-";
+  } else if (value > 0) {
+    while (value > 0) {
+      const digit = value % alphabet.length;
+      result = alphabet.charAt(digit) + result;
+      value -= digit;
+      value /= alphabet.length;
     }
-    return result;
+    const prefix = alphabet.charAt(result.length + 37);
+    result = prefix + result;
+  } else {
+    value = -value;
+    while (value > 0) {
+      const digit = value % alphabet.length;
+      result = alphabet.charAt(alphabet.length - 1 - digit) + result;
+      value -= digit;
+      value /= alphabet.length;
+    }
+    const prefix = alphabet.charAt(37 - result.length);
+    result = prefix + result;
+  }
+  return result;
 }

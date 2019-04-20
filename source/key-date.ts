@@ -6,6 +6,5 @@
 import { milliseconds } from "./key-milliseconds";
 
 export function date(key: string): Date {
-
-    return new Date(milliseconds(key));
+  return new Date(milliseconds(key));
 }

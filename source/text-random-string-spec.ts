@@ -8,22 +8,18 @@ import { expect } from "chai";
 import { randomString } from "./text-random-string";
 
 describe("firebase-key", () => {
+  describe("randomString", () => {
+    it("should generate a random string", () => {
+      const limit = 32;
 
-    describe("randomString", () => {
+      for (let i = 1; i < limit; ++i) {
+        const text = randomString("ab", i);
+        expect(typeof text).to.equal("string");
+        expect(text.length).to.equal(i);
 
-        it("should generate a random string", () => {
-
-            const limit = 32;
-
-            for (let i = 1; i < limit; ++i) {
-
-                const text = randomString("ab", i);
-                expect(typeof text).to.equal("string");
-                expect(text.length).to.equal(i);
-
-                const regExp = new RegExp(`[ab]{${i}}`);
-                expect(text).to.match(regExp);
-            }
-        });
+        const regExp = new RegExp(`[ab]{${i}}`);
+        expect(text).to.match(regExp);
+      }
     });
+  });
 });

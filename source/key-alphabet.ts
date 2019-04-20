@@ -3,4 +3,5 @@
  * can be found in the LICENSE file at https://github.com/cartant/firebase-key
  */
 
-export const alphabet = "-0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ_abcdefghijklmnopqrstuvwxyz";
+export const alphabet =
+  "-0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ_abcdefghijklmnopqrstuvwxyz";

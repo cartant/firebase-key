@@ -4,10 +4,16 @@
  */
 
 export function encode(component: string): string {
+  // Note that exclamation marks are used. The standard encoding mechansim
+  // that uses percentage characters doesn't play nice with the REST URLs
+  // and the Firebase console (at least) breaks.
 
-    // Note that exclamation marks are used. The standard encoding mechansim
-    // that uses percentage characters doesn't play nice with the REST URLs
-    // and the Firebase console (at least) breaks.
-
-    return component.replace(/[\/\.\$\[\]#!]/g, (match) => `!${match.charCodeAt(0).toString(16).toUpperCase()}`);
+  return component.replace(
+    /[\/\.\$\[\]#!]/g,
+    match =>
+      `!${match
+        .charCodeAt(0)
+        .toString(16)
+        .toUpperCase()}`
+  );
 }

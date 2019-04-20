@@ -8,12 +8,9 @@ import { expect } from "chai";
 import { date } from "./key";
 
 describe("firebase-key", () => {
-
-    describe("date", () => {
-
-        it("should return the key's timestamp portion as a Date", () => {
-
-            expect(date("-KKuid1F000000000000").getTime()).to.equal(1466642894992);
-        });
+  describe("date", () => {
+    it("should return the key's timestamp portion as a Date", () => {
+      expect(date("-KKuid1F000000000000").getTime()).to.equal(1466642894992);
     });
+  });
 });

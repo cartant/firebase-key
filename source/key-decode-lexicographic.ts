@@ -10,24 +10,20 @@ import { alphabet } from "./key-alphabet";
  * @see http://www.zanopha.com/docs/elen.pdf
  */
 export function decodeLexicographic(key: string): number {
+  let value = 0;
 
-    let value = 0;
-
-    const lengthChar = key.charAt(0);
-    if (lengthChar > "_") {
-
-         for (let k = 1; k < key.length; k++) {
-            value *= alphabet.length;
-            value += alphabet.indexOf(key.charAt(k));
-        }
-
-    } else {
-
-        for (let k = 1; k < key.length; k++) {
-            value *= alphabet.length;
-            value += alphabet.length - 1 - alphabet.indexOf(key.charAt(k));
-        }
-        value = -value;
+  const lengthChar = key.charAt(0);
+  if (lengthChar > "_") {
+    for (let k = 1; k < key.length; k++) {
+      value *= alphabet.length;
+      value += alphabet.indexOf(key.charAt(k));
     }
-    return value;
+  } else {
+    for (let k = 1; k < key.length; k++) {
+      value *= alphabet.length;
+      value += alphabet.length - 1 - alphabet.indexOf(key.charAt(k));
+    }
+    value = -value;
+  }
+  return value;
 }
