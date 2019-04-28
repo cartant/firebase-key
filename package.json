@@ -29,6 +29,11 @@
   },
   "es2015": "./dist/esm2015/index.js",
   "homepage": "https://github.com/cartant/firebase-key",
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
   "keywords": [
     "firebase",
     "key",
