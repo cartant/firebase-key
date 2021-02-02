@@ -7,7 +7,7 @@ import { alphabet } from "./key-alphabet";
 import { repeat } from "./text-repeat";
 
 export function increment(key: string): string {
-  return key.replace(/[^z]z*$/, match => {
+  return key.replace(/[^z]z*$/, (match) => {
     const index = alphabet.indexOf(match.charAt(0));
     if (index === -1) {
       throw new Error(`Unexpected character '${match.charAt(0)}'.`);

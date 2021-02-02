@@ -10,10 +10,6 @@ export function encode(component: string): string {
 
   return component.replace(
     /[\/\.\$\[\]#!]/g,
-    match =>
-      `!${match
-        .charCodeAt(0)
-        .toString(16)
-        .toUpperCase()}`
+    (match) => `!${match.charCodeAt(0).toString(16).toUpperCase()}`
   );
 }

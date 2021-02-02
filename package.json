@@ -66,6 +66,8 @@
     "dist:uglify": "uglifyjs -c --comments /license/ -m -o bundles/firebase-key.min.umd.js bundles/firebase-key.umd.js",
     "lint": "tslint --project tsconfig.json source/**/*.ts",
     "prepublishOnly": "yarn run test && yarn run dist",
+    "prettier": "prettier --write \"./source/**/*.{js,json,ts,tsx}\"",
+    "prettier:ci": "prettier --check \"./source/**/*.{js,json,ts,tsx}\"",
     "test": "yarn run lint && yarn run test:build && karma start",
     "test:build": "yarn run test:clean && tsc -p tsconfig.json && rollup -c rollup-config-test.js",
     "test:clean": "rimraf build && rimraf bundles/firebase-key-test.* && mkdirp bundles"
